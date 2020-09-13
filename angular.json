@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "data-biding"
+    }
+  },
+  "defaultProject": "data-biding",
+  "cli": {
+    "analytics": "d9dfbf13-c1a3-420c-a402-bf8d8162d722"
+  }
 }
