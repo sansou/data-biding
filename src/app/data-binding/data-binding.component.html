@@ -1,4 +1,5 @@
 <section>
+   <!-- Property binding e interpolação-->
   <!-- <article>
     <h3>Interpolation / Interpolação</h3>
     <p> String renderizada com interpolação: {{url}}</p>
@@ -6,7 +7,9 @@
     <p> O resultado de 1+1 não é: {{1 + 1 + getValor()}}</p>
     <p> Curso angular e gosto do curso: {{cursoAngular && getCurtiCurso()}}</p>
   </article>   -->
-  <article>
+
+  <!-- Class e Style binding -->
+  <!-- <article>
     <h3>Class e Style Biding</h3>
     <div>
       Selecione uma classe:
@@ -41,6 +44,35 @@
       </div>
 
     </div>
-  </article>  
+  </article>   -->
+
+  <!--  Event binding-->
+  <article>
+    <h3>Event binding</h3>
+    <div>
+      <button (click)="botaoClicado()"
+        class="btn btn-primary">Me clique</button>
+        <br>
+        <br>
+
+      <input type="text"
+        (keyup)="OnKeyUp($event)"
+        (keyup.Enter)="salvarValor(campoInput.value)"
+        (blur)="salvarValor(campoInput.value)"
+        #campoInput />
+
+        <p>Valor atual: {{ valorAtual }}</p>
+        <p>Valor salvo: {{ valorSalvo }}</p>
+
+        <br>
+        <span
+          (mouseover)="OnMouseOverOut()"
+          (mouseout)="OnMouseOverOut()"
+          [class.highlight]="isMouseOver"
+          >
+          Passe o mouse sobre mim
+        </span>
+    </div>
+  </article>
 
 </section>
