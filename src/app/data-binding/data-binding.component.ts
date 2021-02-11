@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
+import { CommonModule } from "@angular/common";
 
 
 @Component({
@@ -14,6 +15,12 @@ export class DataBindingComponent implements OnInit {
   valorSalvo: string ='';
   isMouseOver: boolean = false;
 
+  nome: string = 'abc';
+
+  pessoa : any = {
+    nome: 'Thales',
+    idade: '18'
+  }
   getValor(){
     return 2;
   }
